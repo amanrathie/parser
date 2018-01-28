@@ -5,19 +5,23 @@
 The goal is to write a parser in Java that parses web server access log file, loads the log to MySQL and checks if a given IP makes more than a certain number of requests for the given duration.
 
 ## Notes
-
-- The program requires MySQL but the tests uses H2, so you can run *mvn test* without having to configure MySQL;
-- MySQL Schema doesn't need to be executed in advance, since the application will create it automatically
-- The input for the generated .jar was changed slightly from the original problem statement (see Instructions section)
-- Some known improvements to be done:
--- Load the log file once instead of every execution
--- Validation on input data
--- Logging
+  
+1. The program requires MySQL but the tests uses H2, so you can run *mvn test* without having to configure MySQL
+2. MySQL Schema doesn't need to be executed in advance, since the application will create it automatically
+   * Mixed
+   * Mixed  
+3. The input for the generated .jar was changed slightly from the original problem statement (see Instructions section)
+4. Item
+   * Load the log file once instead of every execution
+   * Validation on input data
+   * Logging
 
 ## Instructions
 
 ### Configurations before running app
 - Update file /src/main/resources/application.properties with correct configuration for the MySQL database and log file path (*parser.filename*)
+
+- Sample log file can be downloaded from here: https://www.dropbox.com/s/j493jzz27g5xvwo/access.log?dl=0
 
 ### Generate .jar
 ```
